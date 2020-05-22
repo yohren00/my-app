@@ -18,8 +18,22 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBook,
+  faAddressCard,
+  faBuilding,
+  faProjectDiagram,
+  faPenNib,
+  faPlane,
+  faAddressBook,
+  faMoneyBill,
+} from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
 
 
+
+library.add(faBook, faAddressCard, faBuilding, faProjectDiagram, faPenNib, faPlane, faAddressBook, faMoneyBill);
 
 const drawerWidth = 240;
 
@@ -85,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MiniDrawer({ data }) {
+export default function MiniDrawer({ data , list}) {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -143,22 +157,9 @@ export default function MiniDrawer({ data }) {
           </IconButton>
         </div>
         <Divider />
-        <List>
-          {["首頁","GitHub資訊"].map((text, index) => (
-            <ListItem 
-            button 
-            key={text}
-            component={NavLink}
-            to={["/","/myGitHub"][index]}
-            >
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-             
-            </ListItem>
-          ))}
-        </List>
+        {list}
         <Divider />
-      </Drawer> 
+      </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
         {data}

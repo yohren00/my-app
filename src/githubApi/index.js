@@ -13,7 +13,7 @@ const useStyles = makeStyles({
   root: {
     // minWidth: '100px',
     // height: 'auto',
-    width: '700px',
+    width: '600px',
     // 'word-wrap': 'break-word'
   }
 });
@@ -60,24 +60,45 @@ function App() {
 
 
   return <>
-   
-      <Card className={classes.root}>
-        <CardContent>
-          <Typography variant="h5" component="h2">
-            title：{apiData.title}
-          </Typography>
-          <br />
-          <Typography variant="h5" component="h2">
-            連結：<a href={apiData.url} >github作品連結</a>
-          </Typography>
-          <br />
-          <Typography variant="h5" component="h2">
-            文件說明：1.{apiData.description}<br />
+    <div className="row">
+      <div className="col-lg-6 ">
+        <Card className={classes.root}>
+          <CardContent>
+            <Typography variant="h5" component="h2">
+              TiTle：{apiData.title}
+            </Typography>
+            <br />
+            <Typography variant="h5" component="h2">
+              連結：<a href={apiData.url} >github作品連結</a>
+            </Typography>
+            <br />
+            <Typography variant="h5" component="h2">
+              文件說明：1.{apiData.description}<br />
               &emsp;&emsp;&emsp;&emsp;&emsp;2.{apiData.description1}
-          </Typography>
-        </CardContent>
-      </Card>
-  
+            </Typography>
+          </CardContent>
+        </Card>
+      </div>
+      <div className="col-lg-6">
+        <Card className={classes.root}>
+          <CardContent>
+            <Typography variant="h5" component="h2">
+              TiTle：{apiData.title}
+            </Typography>
+            <br />
+            <Typography variant="h5" component="h2">
+              連結：<a href={apiData.url} >github作品連結</a>
+            </Typography>
+            <br />
+            <Typography variant="h5" component="h2">
+              文件說明：1.{apiData.description}<br />
+            &emsp;&emsp;&emsp;&emsp;&emsp;2.{apiData.description1}
+            </Typography>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+    
   </>;
 }
 
