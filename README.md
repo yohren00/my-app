@@ -1,2 +1,2 @@
-串GitHub API 取得title、description、url<br/>
-不用套件可使頁面實現Infinite Scroll
+串 GitHub API 取得 title、description、url
+不用套件可使頁面實現 Infinite Scroll
