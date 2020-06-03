@@ -7,11 +7,9 @@ function App() {
     const [apiData, setApiData] = useState({ info: [] });
     const [target, setTarget] = useState({ seacher: "" });
 
-
-
     useEffect(() => {
         console.log("useEffect");
-        userData();
+        userData()
     }, [])
 
     /**
@@ -20,29 +18,26 @@ function App() {
     function userData() {
         Axios.get(
             "https://api.github.com/users/yohren00/repos?client_id=5c25b8a05e9391eb2fe9client_secret=5f944f596d5b10f05ea04da03c497187ce7bfb57"
-        ).then((res) => {
-            // console.log(res.data)
-            // let a = res.data.map((e) => {
-            //   Axios.get(`https://api.github.com/repos/yohren00/${e.name}/readme?client_id=5c25b8a05e9391eb2fe9&client_secret=5f944f596d5b10f05ea04da03c497187ce7bfb57`)
-            //     .then((res) => {
-            //       let data = res.data;
-            //       let decodedString = Buffer.from(data.content, 'base64').toString();
-            //       let rows = decodedString.split('\n');
-            //       dataDeacription.push(rows.map((el) => {
-            //         if (el.length > 1) {
-            //           el = el.replace("<br/>", "");
-            //           return <ul><li>{el}</li></ul>;
-            //         }
-            //       }));
-            //       console.log(dataDeacription)
-            //       setApiData(prevState => ({ ...prevState, title: dataName, url: dataUrl, description: dataDeacription }));
-            //     });
-            //   console.log(dataDeacription)
-            //   return <p>{dataDeacription}</p>
-            // });
-            setApiData((prevState) => ({ ...prevState, info: res.data }));
-        })
+        )
+            .then((res) => {
+                res.data.map((e, index, array) => {
+                    return Axios.get(`https://api.github.com/repos/yohren00/${e.name}/readme?client_id=5c25b8a05e9391eb2fe9&client_secret=5f944f596d5b10f05ea04da03c497187ce7bfb57`)
+                        .then((res2) => {
+                            /**
+                             * base64解碼
+                             */
+                            let decodedString = Buffer.from(res2.data.content, 'base64').toString();
+                            e.content = decodedString;
+                            console.log(e.id)
+                            setApiData((prevState) => ({ ...prevState }))
+                        })
+                })
+                // res.data[0].id = "123"
+                // console.log(res.data[0].id)
+                setApiData((prevState) => ({ info: res.data }))
+            });
     };
+
 
     /**
      * filter
@@ -50,7 +45,6 @@ function App() {
     const filterTitle = apiData.info.filter(data =>
         data.name.toLowerCase().includes(target.seacher.toLowerCase())
     );
-
 
     return (
         <>
@@ -60,11 +54,7 @@ function App() {
                 </div>
             </div>
             <br />
-            <div className="row">
-                <div className="col-12">
-                    <CardList list={filterTitle} />
-                </div>
-            </div>
+            <CardList list={filterTitle} content={apiData} />
         </>
     )
 };

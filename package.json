@@ -1,69 +1,73 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.28",
-    "@fortawesome/free-brands-svg-icons": "^5.13.0",
-    "@fortawesome/free-regular-svg-icons": "^5.13.0",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "@fortawesome/react-fontawesome": "^0.1.9",
-    "@material-ui/core": "^4.9.14",
-    "@material-ui/icons": "^4.9.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
-    "bootstrap": "^4.5.0",
-    "connect-ensure-login": "^0.1.1",
-    "cookie-parser": "^1.4.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^4.0.4",
-    "express-session": "^1.17.1",
-    "flatted": "^2.0.2",
-    "github-api": "^3.3.0",
-    "moment": "^2.25.3",
-    "nodemon": "^2.0.4",
-    "passport": "^0.4.1",
-    "passport-github": "^1.1.0",
-    "qs": "^6.9.4",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.0.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "underscore": "^1.10.2",
-    "winston": "^3.2.1",
-    "winston-daily-rotate-file": "^4.4.2"
-  },
-  "scripts": {
-    "start": "react-scripts start ",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev": "nodemon --inspect   ./bin/www"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://yohern00.github.io/yohren00-Portfolio",
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.13.0",
+        "@fortawesome/fontawesome-svg-core": "^1.2.28",
+        "@fortawesome/free-brands-svg-icons": "^5.13.0",
+        "@fortawesome/free-regular-svg-icons": "^5.13.0",
+        "@fortawesome/free-solid-svg-icons": "^5.13.0",
+        "@fortawesome/react-fontawesome": "^0.1.9",
+        "@material-ui/core": "^4.9.14",
+        "@material-ui/icons": "^4.9.1",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.5.0",
+        "@testing-library/user-event": "^7.2.1",
+        "axios": "^0.19.2",
+        "bootstrap": "^4.5.0",
+        "connect-ensure-login": "^0.1.1",
+        "cookie-parser": "^1.4.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^4.0.4",
+        "express-session": "^1.17.1",
+        "flatted": "^2.0.2",
+        "gh-pages": "^2.2.0",
+        "github-api": "^3.3.0",
+        "moment": "^2.25.3",
+        "nodemon": "^2.0.4",
+        "passport": "^0.4.1",
+        "passport-github": "^1.1.0",
+        "qs": "^6.9.4",
+        "react": "^16.13.1",
+        "react-bootstrap": "^1.0.1",
+        "react-dom": "^16.13.1",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "3.4.1",
+        "underscore": "^1.10.2",
+        "winston": "^3.2.1",
+        "winston-daily-rotate-file": "^4.4.2"
+    },
+    "scripts": {
+        "start": "react-scripts start ",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "dev": "nodemon --inspect   ./bin/www",
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+    "main": "index.js",
+    "devDependencies": {},
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
