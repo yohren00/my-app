@@ -32,8 +32,6 @@ function App() {
                             setApiData((prevState) => ({ ...prevState }))
                         })
                 })
-                // res.data[0].id = "123"
-                // console.log(res.data[0].id)
                 setApiData((prevState) => ({ info: res.data }))
             });
     };

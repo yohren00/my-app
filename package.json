@@ -2,7 +2,7 @@
     "name": "my-app",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://yohern00.github.io/yohren00-Portfolio",
+    "homepage": "https://yohern00.github.io/portfolio",
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.13.0",
         "@fortawesome/fontawesome-svg-core": "^1.2.28",
@@ -24,7 +24,7 @@
         "express-handlebars": "^4.0.4",
         "express-session": "^1.17.1",
         "flatted": "^2.0.2",
-        "gh-pages": "^2.2.0",
+        "gh-pages": "^3.0.0",
         "github-api": "^3.3.0",
         "moment": "^2.25.3",
         "nodemon": "^2.0.4",
