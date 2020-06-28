@@ -2,7 +2,7 @@
     "name": "my-app",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://yohern00.github.io/portfolio",
+    "homepage": "https://yohern00.github.io/my-app",
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.13.0",
         "@fortawesome/fontawesome-svg-core": "^1.2.28",
