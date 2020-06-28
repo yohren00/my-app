@@ -11,7 +11,7 @@ function About() {
             <div className="row">
                 <div className="col-lg-1 col-sm-12" />
                 <div className="col-lg-2 col-sm-12">
-                    <img className="icon" alt="me" src="imges/me.jpg" />
+                    <img className="icon" alt="" src="imges/me.jpg" />
                 </div>
                 <div className="col-lg-8 col-sm-12 context-font">
                     您好，我叫林祐煒。

@@ -4,6 +4,8 @@ import Header from "./header/header.jsx";
 import GitHubAPi from "./githubApi/github-api.jsx";
 import About from "./about/about.jsx";
 import MenuList from "./layout/menuList";
+import ECommerce from "./e-commerce/e-commerce.jsx";
+
 
 
 
@@ -16,6 +18,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={About} />
             <Route exact path="/myGitHub" component={GitHubAPi} />
+            <Route exact path="/ecommerce" component={ECommerce} />
           </Switch>
         }
           list={<MenuList />}
