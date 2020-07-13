@@ -14,18 +14,30 @@ function About() {
                     <img className="icon" alt="" src="imges/me.jpg" />
                 </div>
                 <div className="col-lg-8 col-sm-12 context-font">
-                    您好，我叫林祐煒。
-                    <br />
-                    曾從事餐飲業的經歷，並當過加盟店家的督導、教育訓練講師、經營主管階級等職位， 讓我豐富了需多視野。
-                    <br />
-                    因為對於程式語⾔有興趣，使⽤網路的資源，在hahow、Udemy等平台購買了專業的技術⼈員錄製的教學影片，學習了
-                    <br />
-                    JAVA、SQL、JSP、Servlet等知識。
-                    <br />
-                    之後任職，未來⼈才網路公司，學會前端技術React，基礎後端技術Node.js(Express為框架)。 <br />
-                    在職中，負責公司官網的維護修改、graph AIP串接bot、⾃社產品維護。
+                    您好，我叫林祐煒。<br />
+                    曾有從事餐飲業的經歷<br />
+                    經歷有：<br />
+                    於加盟餐飲體系，擔任<br />
+                    1.營運主管。<br />
+                    2.教育訓練講師。<br />
+                    3.門市督導。<br />
                     <br />
                     <br />
+                    之後任職，未來人才網路公司，<br />
+                    經歷有：<br />
+                    1.負責公司官網的維護與修改：<br />
+                    使用React.js負責維護與修改，使用RWD讓手機與網頁版面好調整。<br /><br />
+
+                    2.graph API 與database串接bot的Demo：<br />
+                    使用node.js用Bot Framework串接office365 API，可使用新增日曆、統計工作檔案數量、統計會議時間。<br />
+                    從database中取得工作時數、工作計畫時間。<br /><br />
+
+                    3.自社產品維護：<br />
+                    使用自社開發的工具Drive Base做成的茶葉購物網站，進行修改或維護。<br /><br />
+
+                    連絡電話：0932180351，平日11點~15點都方便接。<br />
+                    感謝貴公司閱覽，祝你有愉快的一天。<br /><br /><br />
+
                     <div className="row">
                         <div className="col-lg-4 col-sm-4">
                             <FontAwesomeIcon icon={fas.faMobileAlt} size="2x" />
