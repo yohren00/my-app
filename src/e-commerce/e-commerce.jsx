@@ -15,10 +15,10 @@ const ECommerce = () => {
             </div>
         </div>
         <div className="row ">
-            <img className="icon col-lg-12 col-sm-12" src="imges/e-commerce.png" alt=""></img>
-            <img className="icon col-lg-12 col-sm-12" src="imges/e-commerce-cart.png" alt=""></img>
-            <img className="icon col-lg-12 col-sm-12" src="imges/e-commerce-shop.png" alt=""></img>
-            <img className="icon col-lg-12 col-sm-12" src="imges/e-commerce-sign.png" alt=""></img>
+            <img className="icon col-lg-12 col-sm-12" src="imges/e-commerce.png" alt=""></img><br />
+            <img className="icon col-lg-12 col-sm-12" src="imges/e-commerce-cart.png" alt=""></img><br />
+            <img className="icon col-lg-12 col-sm-12" src="imges/e-commerce-shop.png" alt=""></img><br />
+            <img className="icon col-lg-12 col-sm-12" src="imges/e-commerce-sign.png" alt=""></img><br />
         </div>
     </>
 };
